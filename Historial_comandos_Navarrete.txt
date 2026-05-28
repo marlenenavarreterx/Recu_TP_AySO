@@ -1,0 +1,54 @@
+sudo apt update
+sudo apt install git -y
+git --version
+git clone 
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+chmod +x ./UTN-FRA_SO_Examenes/script_Precondicion.sh
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+source  ~/.bashrc  && history -a 
+git clone https://github.com/marlenenavarreterx/Recu_TP_AySO.git
+cd Recu_TP_AySO
+ls
+nano README.md
+cat README.md
+git add .
+git commit
+git config --global user.email "marlenenavarreterx@gmail.com"
+git config --global user.name "Marlene Navarrete"
+git commit -m "README  actualizado"
+git push
+cd ~/Recu_TP_AySO
+nano Punto_A.sh
+chmod +x Punto_A.sh
+bash Punto_A.sh
+ls -R /datos
+nano usuario.sh
+chmod +x usuario.sh
+bash usuario.sh
+nano Punto_B.sh
+chmod +x Punto_B.sh
+bash Punto_B.sh
+ls -ld /datos
+cat /datos/validar1.txt
+nano Punto_C.sh
+chmod +x Punto_C.sh
+bash Punto_C.sh
+ls -ld /datos
+tail -n 1 /datos/validar1.txt
+nano Punto_D.sh
+chmod +x Punto_D.sh
+bash Punto_D.sh
+ls ~/Ejercicio_D/rx | wc -l
+ls ~/Ejercicio_D/tx | wc -l
+nano Punto_E.sh
+chmod +x Punto_E.sh
+bash Punto_E.sh
+cat ~/Punto_E/Filtro_basico.txt
+nano Punto_F.sh
+chmod +x Punto_F.sh
+bash Punto_F.sh
+cat ~/Punto_F/Filtro_Avanzado.txt
+history -a
+git config --list
+history -a
